@@ -1,12 +1,9 @@
 import axios from 'axios'
 
-const customAxios = axios.create({ 
-
-baseURL: "http://localhost:5050",
-withCredentials: true
-
-
-})
+const customAxios = axios.create({
+    baseURL: "https://url-shortener-tdrd.onrender.com", 
+    withCredentials: true
+  });
 
 customAxios.interceptors.request.use((config) => { 
 
