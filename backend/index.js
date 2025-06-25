@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(cors({
 credentials: true,
-origin: "http://localhost:3000"
+origin: "https://url-shortener-1-pjgx.onrender.com"
 
 }))
 app.use(cookie())
