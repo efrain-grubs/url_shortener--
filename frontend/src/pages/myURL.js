@@ -65,11 +65,11 @@ sendDeletion()
          className="flex items-center justify-between border-b border-gray-200 py-2">
       
          <a
-           href={`http://localhost:5050/${info.shortURL}`}
+           href={`https://url-shortener-tdrd.onrender.com/${info.shortURL}`}
            className="text-blue-600 hover:underline break-all"
            target="_blank"
            rel="noopener noreferrer">
-           {`http://localhost:5050/${info.shortURL}`}
+           {`https://url-shortener-tdrd.onrender.com/${info.shortURL}`}
          </a>
        
  
