@@ -65,7 +65,7 @@ const saveCustom = new URL({url: url,shortURL: customURL,user: userId})
 
 await saveCustom.save()
 
-res.status(201).json({message: "url created",saveCustom,short_url: `http://localhost:5050/${customURL}`})
+res.status(201).json({message: "url created",saveCustom,short_url: `https://dashboard.render.com/static/srv-d1dnhdje5dus73dojha0/${customURL}`})
 
 })
 
