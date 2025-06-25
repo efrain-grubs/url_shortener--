@@ -77,11 +77,11 @@ function PrivateURL() {
                 <input
                   readOnly
                   className="border p-2 rounded w-full text-center"
-                  value={`http://localhost:5050/${id}`}
+                  value={`https://url-shortener-tdrd.onrender.com/${id}`}
                 />
                 <div className="flex justify-center space-x-2">
                   <button
-                    onClick={() => navigator.clipboard.writeText(`http://localhost:5050/${id}`)}
+                    onClick={() => navigator.clipboard.writeText(`https://url-shortener-tdrd.onrender.com/${id}`)}
                     className="bg-blue-500 text-white px-4 py-1 rounded"
                   >
                     Copy
@@ -133,12 +133,12 @@ function PrivateURL() {
               <div className="space-y-2">
                 <input
                   readOnly
-                  value={`http://localhost:5050/${customURL}`}
+                  value={`https://url-shortener-tdrd.onrender.com/${customURL}`}
                   className="border p-2 rounded w-full text-center"
                 />
                 <button
                   onClick={() =>
-                    navigator.clipboard.writeText(`http://localhost:5050/${customURL}`)
+                    navigator.clipboard.writeText(`https://url-shortener-tdrd.onrender.com/${customURL}`)
                   }
                   className="bg-blue-500 text-white px-4 py-1 rounded w-full"
                 >

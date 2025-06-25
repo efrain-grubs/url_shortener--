@@ -8,7 +8,7 @@ function Public() {
 
   const sendUrl = async () => {
     try {
-      const info = await axios.post("http://localhost:5050/public", { url })
+      const info = await axios.post("https://url-shortener-tdrd.onrender.com/public", { url })
       console.log("info", info)
       console.log("information", info.data.shortURL)
       setShorten(info.data.urlID)
@@ -46,13 +46,13 @@ function Public() {
           <p className="font-semibold">Your shortened link</p>
           <input
             type="text"
-            value={`http://localhost:5050/${shorten}`}
+            value={`https://url-shortener-tdrd.onrender.com/${shorten}`}
             readOnly
             className="border p-2 rounded w-full text-center"
           />
           <button
             onClick={() => {
-              navigator.clipboard.writeText(`http://localhost:5050/${shorten}`)
+              navigator.clipboard.writeText(`https://url-shortener-tdrd.onrender.com/${shorten}`)
             }}
             className="bg-blue-500 text-white px-4 py-2 rounded w-full"
           >
