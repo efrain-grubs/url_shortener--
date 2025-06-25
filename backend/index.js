@@ -26,9 +26,9 @@ app.use('/refresh',refresh)
 app.use('/',url)
 app.use('/stats',stats)
 
-
+const PORT = process.env.PORT || 5050
 mongoose.connect(process.env.MONGO_URI)
-.then(() => app.listen(5050,() => console.log("connected to port")))
+.then(() => app.listen(PORT,() => console.log("connected to port")))
 .catch((err) => console.log("unable to connect to mongoDB",err))
 
 
