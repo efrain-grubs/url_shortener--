@@ -25,9 +25,7 @@ app.use('/user',limiter,userInfo)
 app.use('/refresh',refresh)
 app.use('/',url)
 app.use('/stats',stats)
-app.use('/ping',(req,res) => {
-    console.log('reached')
-    res.send('pong')})
+app.get('/ping',(req,res) =>  res.send('pong'))
 
 const PORT = process.env.PORT || 5050
 mongoose.connect(process.env.MONGO_URI)
