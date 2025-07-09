@@ -28,9 +28,7 @@ A fullstack MERN-based URL shortener that allows users to create short links, tr
 - 🛡️ Rate limiting to prevent spam
 - 🔒 Secure backend with JWT & refresh tokens
 
----
-## notice
-using renders free plan so server takes up to a minute to wake up
+
 
 
 
